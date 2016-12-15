@@ -107,7 +107,23 @@ li {
     color: #38b7ea;
     text-decoration: underline;
 }
-
+.refresh {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 10px 20px 10px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+.refresh:hover {
+    color: #38b7ea;
+    border: 1px solid #38b7ea;
+    transition: border-color .2s;
+}
+i.fa.fa-refresh {
+    padding-right: 5px;
+}
 .repo {
     position: relative;
     float: left;
@@ -160,30 +176,13 @@ li {
 
 
 /* tags */
-.repo:after {
-    content: '';
+.repo-tags {
     position: absolute;
     right: 15px;
     bottom: 15px;
     font-size: 14px;
     color: #efefef;
 }
-
-.repo.javascript:after {
-    content: 'JavaScript';
-}
-.repo.css:after {
-    content: 'CSS';
-}
-.repo.html:after {
-    content: 'HTML';
-}
-.repo.nodejs:after {
-    content: 'Node.JS';
-}
-.repo.project:after {
-     content: 'Project';
- }
 
 .hidden {
     display: none;
