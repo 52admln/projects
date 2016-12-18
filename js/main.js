@@ -51,12 +51,12 @@ var projectStorage = {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(source));
     },
     get: function () {
-        return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+        return JSON.parse(localStorage.getItem(STORAGE_KEY));
     }
 };
 
 function init() {
-    if (projectStorage.get() === []) {
+    if (!projectStorage.get()) {
         getData();
     } else {
         renderData(projectStorage.get());
