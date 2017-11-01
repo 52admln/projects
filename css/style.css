@@ -69,6 +69,20 @@ li {
     height: 110px;
     margin: 0 10px 20px 10px;
 }
+.footer {
+    margin: 0 10px 20px 10px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+.footer:hover {
+    opacity: 1;
+    transition: opacity .2s;
+}
 .main {
     margin-top: 30px;
     margin-left: 20px;
@@ -79,7 +93,7 @@ li {
 .logo {
     height: 50px;
     width: 50px;
-    background: url("https://wyj.im/images/avatar.jpg") no-repeat;
+    background: url("https://www.52admin.net/images/avatar.jpg") no-repeat;
     background-size: 50px 50px;
     text-indent: -9999px;
     margin-right: 15px;
